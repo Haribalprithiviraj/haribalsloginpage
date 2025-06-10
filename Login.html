@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href=''>
+    <script src=''></script>
+    <style>
+        body {
+  background-color: aliceblue;
+  color: blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+#container {
+  width: 100%;
+  height: 50%;
+  padding: 20px;
+  background-color: whitesmoke;
+  box-shadow: 0 0 10px;
+  border-radius: 30px;
+  text-align: center;
+  position: relative;
+}
+
+form {
+  width: 100%;
+}
+
+#label1, #label2 {
+  display: block;
+  font-size: large;
+  padding: 10px;
+}
+
+#email, #password {
+  width: 90%;
+  border-color: blue;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+#login {
+  background-color: blue;
+  color: white;
+  border-radius: 10px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  #container {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #container {
+    width: 90%;
+    padding: 10px;
+    position: relative;
+    left:2%;
+  }
+
+  #email, #password {
+    width: 75%;
+  }
+
+  #label1, #label2 {
+    font-size: medium;
+  }
+}
+
+    </style>
+</head>
+<body>    
+        <div id="container">
+         <h1 id="logo">Login</h1>
+         <form method="get">
+          
+                               <label id="label1">E-mail id or username</label>  
+                               
+                               <input title="E-mailid" id="email" placeholder="Enter E-mail id"  required />
+                    
+                               <label id="label2">Password</label> 
+                   
+                              <input type="password" id="password" title="password" placeholder="Enter password"  required />
+                    
+                            <button id="login" onClick={handleloginclick} title="login">Login</button>
+                    
+         </form>
+         </div>
+         
+    </body>
+ </html>
